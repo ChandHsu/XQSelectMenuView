@@ -33,7 +33,7 @@ XQSelectMenuView 支持自动适应高度:
 
 在自适应高度的情况下,实现其他控件对selectView依赖
 
-1.遵守协议`<XQSelectMenuViewDelegate>`\<br>
+1.遵守协议`<XQSelectMenuViewDelegate>`<br>
 2.设置代理:
 ```objc
     selectView.delegate = self;
