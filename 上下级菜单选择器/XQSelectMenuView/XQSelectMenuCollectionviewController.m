@@ -41,8 +41,18 @@ static NSString * const reuseIdentifier = @"SelectMenuCollectionviewControllerCe
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    // 这地方露怯了,这个算法不好,暂时还做不到完全适配-----如果自定义之后改变了item的大小,出现了自适应异常的问题,请修改这里的数据
+    int lineCount;
+    if (self.view.frame.size.width > 500) {
+        lineCount = (self.view.frame.size.width + 60)/(itemWidth+self.minimumInteritemSpacing);
+        
+        if (self.view.frame.size.width > 540) {
+            lineCount = (self.view.frame.size.width - 160)/(itemWidth+self.minimumInteritemSpacing);
+        }
+    }else{
+        lineCount = self.view.frame.size.width/(itemWidth+self.minimumInteritemSpacing);
+    }
     
-    int lineCount = self.view.frame.size.width/(itemWidth+self.minimumInteritemSpacing);
     
     self.viewHeight = 10 + self.dataSourceArray.count/lineCount * (itemHeight + self.minimumLineSpacing);
     
