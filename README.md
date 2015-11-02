@@ -1,6 +1,6 @@
 # XQSelectMenuView
 ##非常好用的上下级菜单选择器,简单快速集成
-
+###支持iPhone和iPad
 效果预览:
 
 ![](https://github.com/qianggeProgramer/XQSelectMenuView/blob/master/1.gif)
@@ -31,7 +31,7 @@
     selectView.autoHeight = YES;
 ```
 
-在自适应高度的情况下,实现其他控件对selectView依赖
+在自适应高度的情况下,(当你未使用autoLayout的时候)实现其他控件对selectView依赖
 
 1.遵守协议`<XQSelectMenuViewDelegate>`<br>
 2.设置代理:
