@@ -6,7 +6,7 @@
 ![](https://github.com/qianggeProgramer/XQSelectMenuView/blob/master/1.gif)
 
 ##用法
-'''Objective-C
+'''objc
 XQSelectMenuView *selectView = [[XQSelectMenuView alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width,100)];
     [self.view addSubview:selectView];
 
