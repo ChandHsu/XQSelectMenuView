@@ -47,6 +47,11 @@
     self.btn.frame = CGRectMake(100, CGRectGetMaxY(self.selectView.frame)+10, 20, 20);
 }
 ```
+
+###自定义Item
+1.修改自定义文件 XQSelectMenuItem<br>
+2.在XQSelectMenuCollectionviewController.m 数据源方法内进行修改数据源
+
 其中有很多不足的地方,如果有什么建议或意见,还请一起交流探讨,大家共同进步,我的联系方式  QQ:296646879
 
 
