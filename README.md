@@ -4,8 +4,6 @@
 ###效果预览:
 
 ##用法
-导入头文件
 
-#import "XQSelectMenuView.h"<br>
 
 
