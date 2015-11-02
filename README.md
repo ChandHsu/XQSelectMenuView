@@ -10,6 +10,7 @@
 
 ```objc
 // 创建XQSelectMenuView
+
     XQSelectMenuView *selectView = [[XQSelectMenuView alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width,100)];
     [self.view addSubview:selectView];
     
@@ -37,12 +38,13 @@ XQSelectMenuView 支持自动适应高度:
 ```objc
     selectView.delegate = self;
     
-    - (void)seleteMenuDidChangeHeight{
+- (void)seleteMenuDidChangeHeight{
+
     NSLog(@"高度改变了");
     
     self.btn.frame = CGRectMake(100, CGRectGetMaxY(self.selectView.frame)+10, 20, 20);
 }
 ```
-其中还有很多不足的地方,还望一起交流探讨,我的联系方式  QQ:296646879
+其中有很多不足的地方,如果有什么建议或意见,还请一起交流探讨,大家共同进步,我的联系方式  QQ:296646879
 
 
