@@ -25,7 +25,7 @@
     selectView.mainTitle = @"主标题:";
     selectView.accessoryTitle = @"副标题:";
 ```
-XQSelectMenuView 支持自动适应高度:
+###XQSelectMenuView 支持自动适应高度:
 
 ```objc
     selectView.autoHeight = YES;
