@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A8AD1BA1BE727F3001DA86E /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4A8AD1B91BE727F3001DA86E /* 1.gif */; };
+		4ABF112F1BF06BAA00DCF2EF /* XQSelectMenuViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ABF112E1BF06BAA00DCF2EF /* XQSelectMenuViewFlowLayout.m */; };
 		4AC454F31BE6EFEE00755434 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC454F21BE6EFEE00755434 /* main.m */; };
 		4AC454F61BE6EFEE00755434 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC454F51BE6EFEE00755434 /* AppDelegate.m */; };
 		4AC454F91BE6EFEE00755434 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC454F81BE6EFEE00755434 /* ViewController.m */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		4A8AD1B91BE727F3001DA86E /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		4ABF112D1BF06BAA00DCF2EF /* XQSelectMenuViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQSelectMenuViewFlowLayout.h; sourceTree = "<group>"; };
+		4ABF112E1BF06BAA00DCF2EF /* XQSelectMenuViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQSelectMenuViewFlowLayout.m; sourceTree = "<group>"; };
 		4AC454EE1BE6EFEE00755434 /* 上下级菜单选择器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "上下级菜单选择器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC454F21BE6EFEE00755434 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4AC454F41BE6EFEE00755434 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,10 +161,12 @@
 			children = (
 				4AC455251BE6F05700755434 /* XQSelectMenuView.h */,
 				4AC455261BE6F05700755434 /* XQSelectMenuView.m */,
-				4AC455281BE6F1BA00755434 /* XQSelectMenuCollectionviewController.h */,
-				4AC455291BE6F1BA00755434 /* XQSelectMenuCollectionviewController.m */,
 				4AC4552B1BE6F1DF00755434 /* XQSelectMenuItem.h */,
 				4AC4552C1BE6F1DF00755434 /* XQSelectMenuItem.m */,
+				4AC455281BE6F1BA00755434 /* XQSelectMenuCollectionviewController.h */,
+				4AC455291BE6F1BA00755434 /* XQSelectMenuCollectionviewController.m */,
+				4ABF112D1BF06BAA00DCF2EF /* XQSelectMenuViewFlowLayout.h */,
+				4ABF112E1BF06BAA00DCF2EF /* XQSelectMenuViewFlowLayout.m */,
 			);
 			path = XQSelectMenuView;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AC4552A1BE6F1BA00755434 /* XQSelectMenuCollectionviewController.m in Sources */,
+				4ABF112F1BF06BAA00DCF2EF /* XQSelectMenuViewFlowLayout.m in Sources */,
 				4AC454F91BE6EFEE00755434 /* ViewController.m in Sources */,
 				4AC454F61BE6EFEE00755434 /* AppDelegate.m in Sources */,
 				4AC455271BE6F05700755434 /* XQSelectMenuView.m in Sources */,

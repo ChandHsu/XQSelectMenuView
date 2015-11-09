@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
+#define  iPhone4     ([[UIScreen mainScreen] bounds].size.height==480)
+#define  iPhone5     ([[UIScreen mainScreen] bounds].size.height==568)
+#define  iPhone6     ([[UIScreen mainScreen] bounds].size.height==667)
+#define  iPhone6plus ([[UIScreen mainScreen] bounds].size.height==736)
+#define  iPad        ([[UIScreen mainScreen] bounds].size.height>736)
+
 @protocol XQSelectMenuCollectionviewControllerDelegate <NSObject>
 
 @required

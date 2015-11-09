@@ -8,6 +8,8 @@
 
 #import "XQSelectMenuView.h"
 #import "XQSelectMenuCollectionviewController.h"
+#import "XQSelectMenuViewFlowLayout.h"
+
 
 #define viewMargin 5
 
@@ -71,16 +73,29 @@
     [self addSubview:mainTitleLabel];
     [self addSubview:accessoryTitleLabel];
     
-    UICollectionViewFlowLayout *flowLayout1 = [[UICollectionViewFlowLayout alloc] init];
+    XQSelectMenuViewFlowLayout *flowLayout1 = [[XQSelectMenuViewFlowLayout alloc] init];
     [flowLayout1 setScrollDirection:UICollectionViewScrollDirectionVertical];
     
-    
-    UICollectionViewFlowLayout *flowLayout2 = [[UICollectionViewFlowLayout alloc] init];
+    XQSelectMenuViewFlowLayout *flowLayout2 = [[XQSelectMenuViewFlowLayout alloc] init];
     [flowLayout2 setScrollDirection:UICollectionViewScrollDirectionVertical];
     
     flowLayout1.minimumInteritemSpacing = 5;
     flowLayout1.minimumLineSpacing = 10;
+    
+    if (iPhone4 || iPhone5) {
+        flowLayout1.maximumSpacing = 10;
+    }else if (iPhone6){
+        flowLayout1.maximumSpacing = 9;
+    }else if (iPhone6plus){
+        flowLayout1.maximumSpacing = 15;
+    }else{
+        flowLayout1.maximumSpacing = 17;
+        flowLayout1.minimumInteritemSpacing = 15;
+        flowLayout1.minimumLineSpacing = 15;
+    }
+    
     flowLayout2.minimumInteritemSpacing = flowLayout1.minimumInteritemSpacing;
+    flowLayout2.maximumSpacing = flowLayout1.maximumSpacing;
     flowLayout2.minimumLineSpacing = flowLayout1.minimumLineSpacing;
     
     XQSelectMenuCollectionviewController *mainVc = [[XQSelectMenuCollectionviewController alloc] initWithCollectionViewLayout:flowLayout1];
