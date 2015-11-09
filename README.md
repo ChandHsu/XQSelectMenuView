@@ -1,6 +1,6 @@
 # XQSelectMenuView
 ##非常好用的上下级菜单选择器,简单快速集成
-
+###支持iPhone和iPad
 效果预览:
 
 ![](https://github.com/qianggeProgramer/XQSelectMenuView/blob/master/1.gif)
@@ -25,12 +25,12 @@
     selectView.mainTitle = @"主标题:";
     selectView.accessoryTitle = @"副标题:";
 ```
-###XQSelectMenuView 支持自动适应高度:
+####XQSelectMenuView 支持自动适应高度:
 
 ```objc
     selectView.autoHeight = YES;
 ```
-
+#####当你未使用autoLayout的时候
 在自适应高度的情况下,实现其他控件对selectView依赖
 
 1.遵守协议`<XQSelectMenuViewDelegate>`<br>
