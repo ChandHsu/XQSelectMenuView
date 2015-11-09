@@ -49,8 +49,9 @@
 ```
 
 ###自定义Item
-1.修改自定义文件 XQSelectMenuItem<br>
-2.在XQSelectMenuCollectionviewController.m 数据源方法内进行修改数据源
+1.修改自定义文件 `XQSelectMenuItem`<br>
+2.在`XQSelectMenuCollectionviewController.m` 数据源方法内进行修改数据源<br>
+3.如果需要修改`item`的`size`,请在`XQSelectMenuView.m`中,修改`flowLayout1`的`minimumInteritemSpacing`,`minimumLineSpacing`,`maximumSpacing`来实现适配效果.
 
 其中有很多不足的地方,如果有什么建议或意见,还请一起交流探讨,大家共同进步,我的联系方式  QQ:296646879
 
